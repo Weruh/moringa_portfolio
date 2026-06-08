@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <main>
+        <header id="home">
+            <div class="overlay overlay-lg">
+                <img src="/img/shapes/square.png" class="shape square" alt="" />
+                <img src="/img/shapes/circle.png" class="shape circle" alt="" />
+                <img src="/img/shapes/half-circle.png" class="shape half-circle1" alt="" />
+                <img src="/img/shapes/half-circle.png" class="shape half-circle2" alt="" />
+                <img src="/img/shapes/x.png" class="shape xshape" alt="" />
+                <img src="/img/shapes/wave.png" class="shape wave wave1" alt="" />
+                <img src="/img/shapes/wave.png" class="shape wave wave2" alt="" />
+                <img src="/img/shapes/triangle.png" class="shape triangle" alt="" />
+                <img src="/img/shapes/letters.png"  class="letters" alt="" />
+                <img src="/img/shapes/points1.png"  class="points points1" alt="" />
+            </div>
+
+            <nav>
+                <div class="container">
+                   <div class="logo">
+                    <img src="/img/logo.png" alt="logo">
+                   </div>
+
+                   <div class="links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#hireme" class="active">Hire Me</a></li>
+                    </ul>
+                   </div>
+
+                   <button class="hamburger-menu" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <div class="bar"></div>
+                   </button>
+                </div>
+            </nav>
+            <div class="header-content">
+            <div class="container grid-2">
+                <div class="column-1">
+                    <h1 class="header">Weru Dennis</h1>
+                     <p class="text">
+                        Hello,I'm Weru Dennis, a passionate and dedicated software developer with a strong foundation in programming languages and a keen eye for detail. 
+                     </p>
+                     <a href="#" class="btn">Download CV</a>
+                </div>
+
+                <div class="column-2 image">
+                    <img src="/img/shapes/points2.png"  class="points points2" alt="" />
+                    <img src="/img/weruh.png" class="img-element z-index" alt="">
+                </div>
+            </div>
+            </div>
+        </header>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="What I Do">Services</h3>
+                    <p class="text">I build clean, responsive digital solutions for websites, web apps, and mobile experiences.</p>
+                </div>
+                <div class="cards">
+                    <div class="card-wrap">                  
+                            <div class="card" data-card="UI/UX">
+                                <div class="card-content">
+                                    <img src="./img/design-icon.png" class="icon" alt="">
+                                    <h3 class="title-sm">Web Design</h3>
+                                    <p class="text">
+                                        I design modern layouts that are simple to use, easy to read, and friendly on every screen size.
+                                    </p>
+                                    <a href="#" class="btn small">Read More</a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card" data-card="Code">
+                                <div class="card-content">
+                                    <img src="./img/code-icon.png" class="icon" alt="">
+                                    <h3 class="title-sm">Web Development</h3>
+                                    <p class="text">
+                                        I develop fast and reliable websites using clean code, strong structure, and practical features.
+                                    </p>
+                                    <a href="#" class="btn small">Read More</a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card" data-card="App">
+                                <div class="card-content">
+                                    <img src="./img/app-icon.png" class="icon" alt="">
+                                    <h3 class="title-sm">App Development</h3>
+                                    <p class="text">
+                                        I create simple app interfaces and user flows that help people complete tasks without confusion.
+                                    </p>
+                                    <a href="#" class="btn small">Read More</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <div class="background-bg">
+                <div class="overlay overlay-sm">
+                    <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="" >
+                    <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="" >
+                    <img src="./img/shapes/square.png" class="shape square" alt="" >
+                    <img src="./img/shapes/wave.png" class="shape wave" alt="" >
+                    <img src="./img/shapes/circle.png" class="shape circle" alt="" >
+                    <img src="./img/shapes/triangle.png" class="shape triangle" alt="" >
+                    <img src="./img/shapes/x.png" class="xshape" alt="" >
+            </div>
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="My works">Portfolio</h3>
+                </div>
+
+                <div class="section-body">
+                    <div class="filter">
+                        <button class="filter-btn active" data-filter="*">All</button>
+                        <button class="filter-btn"  data-filter=".ui">UI/UX</button>
+                        <button class="filter-btn"  data-filter=".webdev">Web Dev</button>
+                        <button class="filter-btn"  data-filter=".appdev">Mobile Dev</button>
+                        <button class="filter-btn"  data-filter=".logo">Logo Design</button>
+                    </div>
+
+                    <div class="grid">
+                        <div class="grid-item logo">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port1.jpg" alt="" srcset="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Logo Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="grid-item webdev">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port2.png" alt="" srcset="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>App Development</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item ui webdev">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port3.png" alt="" srcset="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Web Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item ui">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port4.png" alt="" srcset="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>UI / UX Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item logo">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port5.jpg" alt="" srcset="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Web Development</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item appdev">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port6.jpg" alt="" srcset="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Web Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item logo">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port7.jpg" alt="" srcset="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Logo Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item appdev ui">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port8.png" alt="" srcset="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>App Development</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item ui webdev " >
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port9.png" alt="" srcset="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Logo Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+                    <div class="more-folio">
+                        <a href="#" class="btn">More Folio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Who Am I">About me</h3>
+                </div>
+                <div class="section-body grid-2">
+                    <div class="column-1">
+                        <h3 class="title-sm">Hello, I'm</h3>
+                        <p class="text">
+                            I am Weru Dennis, a software developer who enjoys turning ideas into useful digital products. I focus on writing clean code, building responsive pages, and creating user experiences that are simple, clear, and dependable.
+                        </p>
+                        <div class="skills">
+                            <div class="skill html">
+                                <h3 class="skill-title">HTML</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"  data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill css">
+                                <h3 class="skill-title">CSS</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill js">
+                                <h3 class="skill-title">JavaScript</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="./img/shapes/points4.png" class="points"  alt="">
+                        <img src="./img/weruh.png" alt=""  class="z-index">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="records">
+            <div class="container">
+                <div class="wrap">
+                    <div class="record-circle">
+                        <h2 class="number " data-num="235">0</h2>
+                        <h4 class="sub-title">Projects</h4>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="record-circle active">
+                        <h2 class="number" data-num="174">0</h2>
+                        <h4 class="sub-title">Happy Clients</h4>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="record-circle">
+                        <h2 class="number" data-num="892">0</h2>
+                        <h4 class="sub-title">Work Hour</h4>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="record-circle">
+                        <h2 class="number" data-num="368">0</h2>
+                        <h4 class="sub-title">Awards</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog section">
+           <div class="container">
+            <div class="section-header">
+                <h3 class="title" data-title="Last News">My blog</h3>
+                <p class="text">I share lessons, ideas, and updates from my journey in software development.</p>
+            </div>
+
+            <div class="blog-wrapper">
+                <div class="blog-wrap">
+                    <img src="./img/shapes/points3.png" alt="" class="points points-sq">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="./img/blog1.png" alt="">
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="blog-info">
+                                <h5 class="blog-date">March, 19 2020</h5>
+                                <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                            </div>
+                            <h3 class="title-sm">Building Better Portfolio Websites</h3>
+                            <p class="blog-text">
+                                A good portfolio should be clear, responsive, and easy for visitors to scan.
+                            </p>
+                            <a href="#" class="btn small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-wrap">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="./img/blog2.png" alt="">
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="blog-info">
+                                <h5 class="blog-date">March, 19 2020</h5>
+                                <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                            </div>
+                            <h3 class="title-sm">Why Clean Code Matters</h3>
+                            <p class="blog-text">
+                                Clean code makes projects easier to maintain, improve, and understand over time.
+                            </p>
+                            <a href="#" class="btn small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-wrap">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="./img/blog3.png" alt="">
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="blog-info">
+                                <h5 class="blog-date">March, 19 2020</h5>
+                                <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                            </div>
+                            <h3 class="title-sm">Learning JavaScript Step by Step</h3>
+                            <p class="blog-text">
+                                JavaScript becomes easier when you practise small concepts and build real projects.
+                            </p>
+                            <a href="#" class="btn small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+
+        <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What People Say">Testimonials</h3>
+          </div>
+
+          <div class="testi-content grid-2">
+            <div class="column-1 reviews">
+              <div class="swiper reviews-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      The website came out clean and easy to use. He listened
+                      well and delivered the work on time. I was very happy
+                      with the final design.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Brian Otieno</h3>
+                      <h5 class="review-job">Photographer, Nairobi</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      He helped us make a simple site for our business. The
+                      pages load fast and customers can find our contacts
+                      without any stress.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Amina Wanjiku</h3>
+                      <h5 class="review-job">Shop Owner, Nakuru</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Working with him was smooth from the start. He explained
+                      things in a simple way and made changes quickly when we
+                      asked.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Kevin Mwangi</h3>
+                      <h5 class="review-job">Project Lead, Kisumu</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Our portfolio site now looks professional and works well
+                      on phone and laptop. The work was done neatly and on
+                      time.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Grace Njeri</h3>
+                      <h5 class="review-job">Designer, Mombasa</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-nav swiper-button-prev">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="review-nav swiper-button-next">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/testi.png" alt="" class="img-element" />
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+        <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-info">
+              <h3 class="title">Get in touch</h3>
+              <p class="text">
+                Have a project, question, or opportunity? Send me a message
+                and I will get back to you as soon as possible.
+              </p>
+              <div class="information-wrap">
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p class="info-text">Thika Road, Ruiru-Gwa-kairu</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-paper-plane"></i>
+                  </div>
+                  <p class="info-text">werudenni19@gmail.com</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <p class="info-text">+254 794 860 469</p>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form">
+              <h3 class="title">Contact me</h3>
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact-input"
+                  name="first_name"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  class="contact-input"
+                  name="last_name"
+                  placeholder="Last Name"
+                />
+              </div>
+
+              <div class="row">
+                <input type="tel" class="contact-input" name="phone" placeholder="Phone" />
+                <input type="email" class="contact-input" name="email" placeholder="Email" />
+              </div>
+
+              <div class="row">
+                <textarea
+                  name="message"
+                  class="contact-input textarea"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+       <section class="hireme" id="hireme">
+        <div class="container">
+          <h3 class="title">Let's talk about a project</h3>
+          <p class="text">
+            If you need a website, web app, or digital solution, I am ready to
+            help you plan it, build it, and make it easy for people to use.
+          </p>
+          <a href="#" class="btn">Hire me</a>
+        </div>
+      </section>
+    </main>
+
+        <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">About</h3>
+            <p class="text">
+              Weru Dennis is a software developer focused on clean design,
+              responsive websites, and practical user-friendly solutions.
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Services</h3>
+            <ul>
+              <li>
+                <a href="#">Web Design</a>
+              </li>
+              <li>
+                <a href="#">Web Dev</a>
+              </li>
+              <li>
+                <a href="#">App Design</a>
+              </li>
+              <li>
+                <a href="#">Marketing</a>
+              </li>
+              <li>
+                <a href="#">UI Design</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-newstletter">
+            <h3 class="title-sm">Subscribe</h3>
+            <p class="text">
+              Subscribe for updates on new projects, blog posts, and helpful
+              development tips.
+            </p>
+            <div class="footer-input-wrap">
+              <input type="email" class="footer-input" placeholder="Email" />
+              <a href="#" class="input-arrow">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2020 All rights reserved | Made by
+              <span>Weru Dennis</span>
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Follow me</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61587263855577">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/heisweruh/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/weru-dennis-441329305/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
